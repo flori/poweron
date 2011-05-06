@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'poweron'
+
+interface = ARGV.shift or fail 'need a mac address/hostname/ip address as first argument'
+Poweron.poweron(interface)
